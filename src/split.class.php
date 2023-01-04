@@ -37,15 +37,15 @@ class Split{
 
             //defines the folder name
             $folder_name = "split/";
-            //defines the folder number
-            $fi = 0;
-            //if there is a folder loop
-             while (file_exists($folder_name)) {
-            // //increase the number
-            $fi++;
-            // //sets a new name
-             $folder_name = "split$fi/";
-            }
+            // //defines the folder number
+            // $fi = 0;
+            // //if there is a folder loop
+            //  while (file_exists($folder_name)) {
+            // // //increase the number
+            // $fi++;
+            // // //sets a new name
+            //  $folder_name = "split$fi/";
+            // }
             //makes the new folder after it finally doesn't exist
             mkdir($folder_name,0777,true);
             echo("[\033[0;37m".current_time()."\033[1;37m Splitting $filename into $folder_name...\033[1;37m\n");
